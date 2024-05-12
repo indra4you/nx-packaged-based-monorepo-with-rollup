@@ -1,0 +1,29 @@
+{
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "name": "utility",
+    "sourceRoot": "packages/utility/src",
+    "projectType": "library",
+    "targets": {
+        "build": {
+            "executor": "@nx/rollup:rollup",
+            "outputs": [
+                "{options.outputPath}"
+            ],
+            "options": {
+                "outputPath": "dist/packages/utility",
+                "main": "packages/utility/src/index.ts",
+                "tsConfig": "packages/utility/tsconfig.lib.json",
+                "assets": [
+                ],
+                "project": "packages/utility/package.json",
+                "compiler": "swc",
+                "format": [
+                    "cjs",
+                    "esm"
+                ]
+            }
+        }
+    },
+    "tags": [
+    ]
+}

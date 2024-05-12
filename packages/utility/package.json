@@ -1,0 +1,8 @@
+{
+    "name": "utility",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {},
+    "main": "./index.cjs",
+    "module": "./index.js"
+}

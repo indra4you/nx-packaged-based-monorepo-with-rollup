@@ -1,0 +1,30 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": [
+            "es2020",
+            "dom"
+        ],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "first-package": ["packages/first-package/src/index.ts"],
+            "second-package": ["packages/second-package/src/index.ts"],
+            "utility": ["packages/utility/src/index.ts"]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "tmp"
+    ]
+}
